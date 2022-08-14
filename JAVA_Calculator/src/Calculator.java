@@ -43,6 +43,7 @@ public class Calculator implements ActionListener{
 	    jf.setLocation(200,100);
 	    
 	    
+	    
 		displayLabel.setBounds(30,50,475,40);
 		displayLabel.setBackground(Color.gray);
 		displayLabel.setOpaque(true);
@@ -325,6 +326,8 @@ public class Calculator implements ActionListener{
 				result = Float.parseFloat(oldValue) / Float.parseFloat(newValue);
 				displayLabel.setText(Float.toString(result));
 			}
+			
+			oldValue = Float.toString(result);
 			
 		}
 		else if(e.getSource()==clearButton) {
